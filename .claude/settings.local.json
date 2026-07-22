@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(npx --yes create-next-app@latest supreme-sealers --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(rm -rf 'C:\\\\Users\\\\shaja\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-shaja-Desktop-Do-not-open-Supreme-sealers\\\\fabbca59-622a-4a7a-86ba-f4aadfd94d9a\\\\scratchpad\\\\supreme-sealers/.git' 'C:\\\\Users\\\\shaja\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-shaja-Desktop-Do-not-open-Supreme-sealers\\\\fabbca59-622a-4a7a-86ba-f4aadfd94d9a\\\\scratchpad\\\\supreme-sealers/.next')",
+      "Bash(cp -r 'C:\\\\Users\\\\shaja\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-shaja-Desktop-Do-not-open-Supreme-sealers\\\\fabbca59-622a-4a7a-86ba-f4aadfd94d9a\\\\scratchpad\\\\supreme-sealers/.' 'C:\\\\Users\\\\shaja\\\\Desktop\\\\Do not open\\\\Supreme sealers/')",
+      "Bash(python3 -)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\shaja\\\\Desktop\\\\Do not open\\\\Supreme sealers\\\\src\\\\app\\\\services\\\\[slug]\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\shaja\\\\Desktop\\\\Do not open\\\\Supreme sealers\\\\src\\\\app\\\\service-areas\\\\[slug]\")",
+      "Bash(npm run *)",
+      "Skill(run)",
+      "Bash(chromium-cli --help)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(npx --yes playwright install chromium)",
+      "Bash(curl -sf http://localhost:3000)",
+      "Bash(node \"C:\\\\Users\\\\shaja\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-shaja-Desktop-Do-not-open-Supreme-sealers\\\\fabbca59-622a-4a7a-86ba-f4aadfd94d9a\\\\scratchpad\\\\check.mjs\")",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(node check.mjs)",
+      "Bash(node scroll_check.mjs)",
+      "Bash(node check2.mjs)",
+      "Bash(curl -sf -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/service-areas --max-time 15)",
+      "Read(//tmp/**)",
+      "Bash(curl -sf -o /dev/null -w \"http:%{http_code} time:%{time_total}\\\\n\" http://localhost:3000/ --max-time 20)",
+      "Bash(tasklist)",
+      "Bash(node mobile_full.mjs)",
+      "Bash(node nav_close.mjs)",
+      "Bash(curl -sf -o /dev/null -w \"http:%{http_code} time:%{time_total}\\\\n\" http://localhost:3000/ --max-time 10)",
+      "Bash(curl -sf -o /dev/null -w \"http:%{http_code}\\\\n\" http://localhost:3000/ --max-time 5)",
+      "Bash(netstat -ano)",
+      "Bash(curl -sf -o /dev/null -w \"local http:%{http_code}\\\\n\" http://localhost:3000/ --max-time 8)",
+      "Bash(curl -sf -o /dev/null -w \"network http:%{http_code}\\\\n\" http://192.168.100.109:3000/ --max-time 8)"
+    ]
+  }
+}
