@@ -13,8 +13,7 @@ export const areas: Area[] = [
     slug: "brentwood",
     city: "Brentwood",
     region: "Williamson County, TN",
-    heroImage:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+    heroImage: "/images/driveway.webp",
     blurb: "Large-lot driveways, pool decks & estate patios.",
     intro: [
       "Brentwood's large lots and long, winding driveways mean a lot of exposed concrete and paver square footage baking in the sun and taking on runoff from every storm. Between HOA curb-appeal expectations and the number of pool decks and outdoor living spaces we see in Brentwood, an unsealed surface stands out fast — and so does a properly sealed one.",
@@ -31,8 +30,7 @@ export const areas: Area[] = [
     slug: "franklin",
     city: "Franklin",
     region: "Williamson County, TN",
-    heroImage:
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80",
+    heroImage: "/images/steps-cleaned.webp",
     blurb: "Historic homes and fast-growing new subdivisions alike.",
     intro: [
       "Franklin is a mix of historic homes near downtown and newer construction spreading through the surrounding subdivisions — which means we see everything from decades-old broom-finish driveways to brand-new paver patios that just finished curing. Both need the same underlying protection against Tennessee's humid summers and freeze-thaw winters.",
@@ -67,8 +65,7 @@ export const areas: Area[] = [
     slug: "nolensville",
     city: "Nolensville",
     region: "Williamson County, TN",
-    heroImage:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80",
+    heroImage: "/images/pressure-washing.webp",
     blurb: "One of Tennessee's fastest-growing towns.",
     intro: [
       "Nolensville is one of the fastest-growing towns in Tennessee, and that growth means a steady stream of newly poured driveways, patios and pool decks that need to be sealed for the first time — plus older properties along the historic Nolensville Pike corridor that need a fresh coat after years of exposure.",

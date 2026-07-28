@@ -23,8 +23,7 @@ export const services: Service[] = [
     tagline: "Driveways & Sidewalks",
     cardCopy:
       "Commercial-grade sealers that protect standard driveways, sidewalks and walkways from stains, salt and sun damage.",
-    heroImage:
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=80",
+    heroImage: "/images/pressure-washing.webp",
     icon: "layers",
     intro: [
       "Your driveway and sidewalks take more abuse than almost any other surface on your property — tires, deicing salt, oil drips, mower traffic and constant sun exposure. Left unsealed, concrete absorbs water, oil and chlorides, which leads to staining, pitting and the freeze-thaw cracking that's common through Middle Tennessee winters.",
@@ -105,8 +104,7 @@ export const services: Service[] = [
     tagline: "Textured, Slip-Resistant Surfaces",
     cardCopy:
       "Breathable penetrating sealers built for broom-finish concrete, so you keep the grip without trapping moisture.",
-    heroImage:
-      "https://images.unsplash.com/photo-1518709414768-a88981a4515d?auto=format&fit=crop&w=1600&q=80",
+    heroImage: "/images/stairs-before-after.webp",
     icon: "waves",
     intro: [
       "Broom-finish concrete is everywhere for a reason — that light texture gives you traction on driveways, walkways and pool decks. But sealing a broomed surface takes a different approach than sealing smooth concrete: a heavy topical coating can fill in the texture and leave the surface slick when wet, which defeats the purpose of the finish in the first place.",
@@ -146,8 +144,7 @@ export const services: Service[] = [
     tagline: "Brown, Gray, Clear & Custom Finishes",
     cardCopy:
       "Enhance and protect exposed aggregate in brown, gray, clear or custom finishes with a sealer built for stone.",
-    heroImage:
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1600&q=80",
+    heroImage: "/images/driveway.webp",
     icon: "gem",
     intro: [
       "Exposed aggregate brings texture and natural stone color to driveways, patios and pool surrounds — but that same exposed stone is more vulnerable to staining, pitting and fading than a standard concrete finish. Unsealed aggregate lets water and freeze-thaw cycles work directly on the individual stones, which loosens them over time.",

@@ -40,15 +40,15 @@ export default function AboutPage() {
         crumb="About Us"
         title="Honest Sealing Experts Serving Williamson County"
         body={`${business.name} protects driveways, patios and pavers across ${business.regionFull} with straight answers, commercial-grade sealers, and a warranty that actually means something.`}
-        image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+        image="/images/steps-cleaned.webp"
       />
 
       <section className="py-16 sm:py-24">
         <Container>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
             <SplitMedia
-              image="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80"
-              stackedImage="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=80"
+              image="/images/driveway.webp"
+              stackedImage="/images/steps-cleaned.webp"
               badge={{ value: business.jobsCompleted, label: "Driveways & patios sealed and protected" }}
             />
             <Reveal delay={1}>
@@ -103,9 +103,7 @@ export default function AboutPage() {
                 ]}
               />
             </Reveal>
-            <SplitMedia
-              image="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1000&q=80"
-            />
+            <SplitMedia image="/images/pressure-washing.webp" />
           </div>
         </Container>
       </section>

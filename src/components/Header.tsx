@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Container } from "./Container";
@@ -46,16 +47,16 @@ export function Header() {
         <Container>
           <nav className="flex items-center justify-between min-h-[78px] gap-6">
             <Link href="/" className="inline-flex items-center gap-3" aria-label={`${business.name} home`}>
-              <span className="grid h-12 w-12 place-items-center rounded-[11px] bg-linear-to-br from-amber-500 to-amber-700 shadow-[0_6px_16px_rgba(217,142,42,0.35)] shrink-0">
-                <span className="font-head font-extrabold text-white text-lg">SS</span>
-              </span>
-              <span className="leading-tight">
-                <span className="block font-head font-extrabold text-[1.16rem] text-charcoal-900">
-                  {business.name}
-                </span>
-                <span className="block text-[0.62rem] font-bold tracking-[0.2em] uppercase text-amber-600 mt-0.5">
-                  Concrete &amp; Paver Sealing
-                </span>
+              <Image
+                src="/images/logo.png"
+                alt={business.name}
+                width={220}
+                height={76}
+                priority
+                className="h-8 sm:h-11 w-auto shrink-0"
+              />
+              <span className="hidden sm:block text-[0.62rem] font-bold tracking-[0.2em] uppercase text-amber-600 -ml-1 whitespace-nowrap">
+                Concrete &amp; Paver Sealing
               </span>
             </Link>
 

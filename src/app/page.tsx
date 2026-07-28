@@ -11,10 +11,12 @@ import { TestimonialCard } from "@/components/TestimonialCard";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { CTASection } from "@/components/CTASection";
 import { StatCounter } from "@/components/StatCounter";
+import { BeforeAfterGallery } from "@/components/BeforeAfterGallery";
 import { services } from "@/lib/services";
 import { areas } from "@/lib/areas";
 import { testimonials } from "@/lib/testimonials";
 import { problems, whyChooseUs, benefits, processSteps, homeFaqs } from "@/lib/content";
+import { beforeAfterGallery } from "@/lib/gallery";
 import { business } from "@/lib/site";
 
 export default function HomePage() {
@@ -46,7 +48,7 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="py-16 sm:py-24 bg-cream-100">
+      <section className="py-16 sm:py-24 bg-white">
         <Container>
           <SectionHead
             eyebrow="Why Choose Us"
@@ -68,7 +70,7 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="py-16 sm:py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-cream-100">
         <Container>
           <SectionHead
             eyebrow="The Benefits of Sealing"
@@ -86,6 +88,17 @@ export default function HomePage() {
               />
             ))}
           </div>
+        </Container>
+      </section>
+
+      <section className="py-16 sm:py-24 bg-cream-100">
+        <Container>
+          <SectionHead
+            eyebrow="Real Results"
+            title="See the Difference on Real Williamson County Homes"
+            body="From driveways and steps to fences and mailboxes, thorough cleaning and sealing is what makes the difference — here's proof from recent jobs."
+          />
+          <BeforeAfterGallery items={beforeAfterGallery} />
         </Container>
       </section>
 

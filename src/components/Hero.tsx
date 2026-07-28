@@ -15,10 +15,7 @@ export function Hero() {
     <section className="relative bg-charcoal-900 text-[#d2dae2] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80')",
-        }}
+        style={{ backgroundImage: "url('/images/driveway.webp')" }}
       />
       <div className="absolute inset-0 bg-linear-to-r from-charcoal-900 via-charcoal-900/70 to-charcoal-900/40" />
       <div className="absolute top-0 right-0 w-[38%] h-full bg-amber-500 opacity-10 diag-right" />

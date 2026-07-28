@@ -31,7 +31,8 @@
       "Bash(curl -sf -o /dev/null -w \"http:%{http_code}\\\\n\" http://localhost:3000/ --max-time 5)",
       "Bash(netstat -ano)",
       "Bash(curl -sf -o /dev/null -w \"local http:%{http_code}\\\\n\" http://localhost:3000/ --max-time 8)",
-      "Bash(curl -sf -o /dev/null -w \"network http:%{http_code}\\\\n\" http://192.168.100.109:3000/ --max-time 8)"
+      "Bash(curl -sf -o /dev/null -w \"network http:%{http_code}\\\\n\" http://192.168.100.109:3000/ --max-time 8)",
+      "Bash(curl -sf -o /dev/null -w \"http:%{http_code}\\\\n\" http://localhost:3000/ --max-time 10)"
     ]
   }
 }

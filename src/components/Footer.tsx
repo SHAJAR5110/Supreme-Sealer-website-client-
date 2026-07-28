@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "./Container";
 import { Icon } from "./icons";
 import { Button } from "./Button";
@@ -28,12 +29,13 @@ export function Footer() {
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.9fr_0.9fr_0.9fr_1fr] gap-10 pb-12 border-b border-white/10 pt-14">
           <div>
-            <div className="inline-flex items-center gap-3">
-              <span className="grid h-11 w-11 place-items-center rounded-[11px] bg-linear-to-br from-amber-500 to-amber-700 shrink-0">
-                <span className="font-head font-extrabold text-white text-base">SS</span>
-              </span>
-              <span className="font-head font-extrabold text-white text-[1.1rem]">{business.name}</span>
-            </div>
+            <Image
+              src="/images/logo.png"
+              alt={business.name}
+              width={220}
+              height={76}
+              className="h-12 w-auto drop-shadow-[0_0_1px_rgba(255,255,255,0.9)] drop-shadow-[0_0_10px_rgba(255,255,255,0.18)]"
+            />
             <p className="my-4 text-[0.94rem] max-w-[320px]">
               Concrete, paver, broomed and exposed aggregate sealing protecting driveways and patios across
               Williamson County for {business.yearsExperience} years.

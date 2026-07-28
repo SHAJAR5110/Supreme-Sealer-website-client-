@@ -21,7 +21,7 @@ export default function ServicesPage() {
         crumb="Services"
         title="Concrete, Paver & Aggregate Sealing Services"
         body="Four specialized sealing services, one accountable local team. Whatever surface needs protecting around your home, we have a proven, warrantied solution."
-        image="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=80"
+        image="/images/pressure-washing.webp"
       />
 
       <section className="py-16 sm:py-24">

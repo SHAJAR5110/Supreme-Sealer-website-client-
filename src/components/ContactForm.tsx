@@ -38,7 +38,7 @@ export function ContactForm() {
   };
 
   const fieldClasses = (hasError?: boolean) =>
-    `rounded-[8px] border-[1.5px] px-4 py-3.5 bg-cream-100 text-ink-900 transition-all outline-none focus:bg-white focus:border-amber-500 focus:shadow-[0_0_0_4px_rgba(217,142,42,0.12)] ${
+    `rounded-[8px] border-[1.5px] px-4 py-3.5 bg-cream-100 text-ink-900 transition-all outline-none focus:bg-white focus:border-amber-500 focus:shadow-[0_0_0_4px_rgba(200,87,13,0.12)] ${
       hasError ? "border-danger bg-red-50" : "border-line"
     }`;
 

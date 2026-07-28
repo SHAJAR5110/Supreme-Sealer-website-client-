@@ -20,7 +20,7 @@ export default function ServiceAreasPage() {
         crumb="Service Areas"
         title={`Proudly Serving ${business.regionShort}`}
         body={`From historic Franklin to the fast-growing Nolensville corridor, ${business.name} is the local team Williamson County homeowners trust to keep their concrete and pavers sealed and protected.`}
-        image="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80"
+        image="/images/driveway.webp"
       />
 
       <section className="py-16 sm:py-24">
