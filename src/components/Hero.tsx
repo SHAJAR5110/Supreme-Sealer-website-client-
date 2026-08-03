@@ -14,24 +14,22 @@ export function Hero() {
   return (
     <section className="relative bg-charcoal-900 text-[#d2dae2] overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: "url('/images/driveway.webp')" }}
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/hero-image.png')" }}
       />
-      <div className="absolute inset-0 bg-linear-to-r from-charcoal-900 via-charcoal-900/70 to-charcoal-900/40" />
-      <div className="absolute top-0 right-0 w-[38%] h-full bg-amber-500 opacity-10 diag-right" />
       <Container className="relative z-10">
         <Reveal className="py-16 sm:py-24 lg:py-[9.5rem] max-w-[770px]">
-          <span className="inline-flex items-center gap-3 bg-white/8 border border-white/15 rounded-full pl-3 pr-4 py-2 mb-6 text-[0.86rem]">
+          <span className="inline-flex items-center gap-3 bg-amber-500/45 border border-amber-500/60 rounded-full pl-3 pr-4 py-2 mb-6 text-[0.86rem]">
             <span className="text-gold-400 tracking-[2px]">★★★★★</span>
             Rated {business.rating}/5 by Williamson County homeowners
           </span>
-          <h1 className="text-white text-[clamp(2.4rem,5.6vw,4.1rem)] leading-[1.04] mb-5.5">
+          <h1 className="text-ink-900 text-[clamp(2.4rem,5.6vw,4.1rem)] leading-[1.04] mb-5.5">
             Concrete &amp; Paver Sealing Experts in <em className="not-italic text-amber-400">Brentwood &amp; Franklin</em>
           </h1>
-          <p className="text-[clamp(1.05rem,2vw,1.26rem)] text-[#c4cdd6] max-w-[630px] mb-8">
+          <p className="text-[clamp(1.05rem,2vw,1.26rem)] text-ink-900 max-w-[630px] mb-8">
             Faded, stained and weathered concrete doesn&apos;t have to stay that way. We clean, repair and seal
-            driveways, patios and pavers with professional-grade sealers — backed by a written{" "}
-            <strong className="text-white">{business.warrantyYears.toLowerCase()} warranty</strong> on every job.
+            driveways, patios and pavers with professional-grade sealers backed by a written{" "}
+            <strong className="text-ink-900">{business.warrantyYears.toLowerCase()} warranty</strong> on every job.
           </p>
           <div className="flex flex-wrap gap-4 items-center">
             <Button href="/contact" size="lg" showArrow>
