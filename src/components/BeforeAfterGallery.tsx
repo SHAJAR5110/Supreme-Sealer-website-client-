@@ -16,11 +16,11 @@ export function BeforeAfterGallery({ items }: { items: GalleryItem[] }) {
               src={item.src}
               width={item.width}
               height={item.height}
-              alt={`${item.title} — before and after`}
+              alt={item.title}
               className="w-full h-auto block"
             />
             <span className="absolute top-3 left-3 rounded-full bg-charcoal-900/80 text-white text-[0.72rem] font-head font-bold uppercase tracking-wide px-3 py-1">
-              Before &amp; After
+              {item.badgeLabel ?? "Before & After"}
             </span>
           </div>
           <div className="p-5">

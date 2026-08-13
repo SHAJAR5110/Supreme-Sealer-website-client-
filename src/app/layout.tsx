@@ -30,20 +30,21 @@ export const metadata: Metadata = {
     default: `${business.name} | Concrete & Paver Sealing in ${business.regionShort}`,
     template: `%s | ${business.name}`,
   },
-  description: `${business.name} delivers professional concrete, paver, brushed and exposed aggregate sealing across ${business.regionFull}. Free written estimates, ${business.warrantyYears.toLowerCase()} warranty. Call ${business.phoneDisplay}.`,
+  description: `${business.name} delivers professional concrete, paver, aggregate and driveway sealing plus pressure washing across ${business.regionFull}. Free written estimates. Call or text ${business.phoneDisplay}.`,
   keywords: [
     "concrete sealing Brentwood TN",
     "driveway sealing Franklin TN",
     "paver sealing Cool Springs",
     "concrete sealing Nolensville",
     "exposed aggregate sealing Williamson County",
+    "pressure washing Green Hills TN",
   ],
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: business.name,
     title: `${business.name} | Concrete & Paver Sealing in ${business.regionShort}`,
-    description: `Professional concrete, paver and exposed aggregate sealing across ${business.regionFull}. Free written estimates, ${business.warrantyYears.toLowerCase()} warranty.`,
+    description: `Professional concrete, paver, aggregate and driveway sealing plus pressure washing across ${business.regionFull}. Free written estimates.`,
   },
 };
 
@@ -73,8 +74,9 @@ export default function RootLayout({
                 "Cool Springs, TN",
                 "Nolensville, TN",
                 "Forest Hills, TN",
+                "Green Hills, TN",
               ],
-              description: `Concrete, paver, brushed concrete and exposed aggregate sealing serving ${business.regionFull}.`,
+              description: `Concrete, paver, brushed concrete, exposed aggregate sealing and pressure washing serving ${business.regionFull}.`,
               priceRange: "$$",
               aggregateRating: {
                 "@type": "AggregateRating",

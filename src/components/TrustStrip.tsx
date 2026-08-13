@@ -4,7 +4,7 @@ import type { IconKey } from "./icons";
 import { business } from "@/lib/site";
 
 const items: { icon: IconKey; num: string; label: string }[] = [
-  { icon: "shieldCheck", num: `${business.warrantyYears}`, label: "Warranty on every job" },
+  { icon: "mapPin", num: "6", label: "Communities served" },
   { icon: "clock", num: `${business.yearsExperience} Years`, label: "Sealing experience" },
   { icon: "home", num: business.jobsCompleted, label: "Driveways & patios sealed" },
   { icon: "star", num: `${business.rating} ★`, label: "Average customer rating" },

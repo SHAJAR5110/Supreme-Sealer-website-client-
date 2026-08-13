@@ -10,8 +10,8 @@ import { processSteps } from "@/lib/content";
 import { business } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `Concrete & Paver Sealing Services in ${business.regionShort}`,
-  description: `Explore ${business.name}'s sealing services: concrete sealing, patio paver sealing, brushed/broomed concrete sealing and exposed aggregate sealing across ${business.regionFull}.`,
+  title: `Concrete, Paver & Driveway Sealing Services in ${business.regionShort}`,
+  description: `Explore ${business.name}'s services: exposed aggregate sealing, brushed/broomed concrete sealing, paver patio sealing, concrete cleaning & sealing, pressure washing and brick mailbox cleaning across ${business.regionFull}.`,
 };
 
 export default function ServicesPage() {
@@ -19,19 +19,19 @@ export default function ServicesPage() {
     <>
       <PageHero
         crumb="Services"
-        title="Concrete, Paver & Aggregate Sealing Services"
-        body="Four specialized sealing services, one accountable local team. Whatever surface needs protecting around your home, we have a proven, warrantied solution."
+        title="Concrete, Paver, Aggregate & Driveway Services"
+        body="Six specialized services, one accountable local team. Whatever surface needs protecting around your home, we have a proven solution."
         image="/images/pressure-washing.webp"
       />
 
       <section className="py-16 sm:py-24">
         <Container>
           <SectionHead
-            eyebrow="What We Seal"
+            eyebrow="What We Service"
             title="Choose Your Surface"
             body="Every sealer we use is matched to the surface, traffic and finish in front of us — not a one-size-fits-all coating."
           />
-          <div className="grid gap-5.5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5.5 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => (
               <ServiceCard key={service.slug} service={service} delay={i === 0 ? undefined : ((i % 3) as 1 | 2)} />
             ))}
@@ -53,8 +53,8 @@ export default function ServicesPage() {
 
       <CTASection
         eyebrow="Not Sure Which Service You Need?"
-        title="We'll Tell You, Honestly."
-        body="Book a free inspection and we'll diagnose exactly what your driveway, patio or pavers need — then recommend only that, backed by our written warranty."
+        title="We'll Tell You Straight."
+        body="Book a free inspection and we'll diagnose exactly what your driveway, patio or pavers need — then recommend only that."
       />
     </>
   );

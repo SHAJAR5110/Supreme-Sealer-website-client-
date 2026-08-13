@@ -18,8 +18,8 @@ export default function ServiceAreasPage() {
     <>
       <PageHero
         crumb="Service Areas"
-        title={`Proudly Serving ${business.regionShort}`}
-        body={`From historic Franklin to the fast-growing Nolensville corridor, ${business.name} is the local team Williamson County homeowners trust to keep their concrete and pavers sealed and protected.`}
+        title="Proudly Serving Brentwood, Franklin, Cool Springs, Nolensville, Forest Hills & Green Hills"
+        body={`From historic Franklin to the fast-growing Nolensville corridor, ${business.name} is your local, family-owned team that homeowners trust to keep their concrete and pavers sealed.`}
         image="/images/driveway.webp"
       />
 
@@ -27,7 +27,7 @@ export default function ServiceAreasPage() {
         <Container>
           <SectionHead
             eyebrow="Where We Work"
-            title="Five Communities, One Standard of Excellence"
+            title="Six Communities, One Standard of Excellence"
             body="Local knowledge matters. We understand the specific soil, water and weather conditions that challenge concrete and pavers in each of our service areas."
           />
           <div className="grid gap-5.5 sm:grid-cols-2 lg:grid-cols-3">

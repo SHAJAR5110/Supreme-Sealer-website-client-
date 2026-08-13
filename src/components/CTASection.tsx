@@ -27,7 +27,7 @@ export function CTASection({
             <div className="flex flex-wrap justify-center gap-4">
               <Button href="/contact" size="lg">{primaryLabel}</Button>
               <Button href={`tel:${business.phoneTel}`} variant="ghost" size="lg">
-                Call {business.phoneDisplay}
+                Call or Text {business.phoneDisplay}
               </Button>
             </div>
           </div>

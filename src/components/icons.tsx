@@ -26,7 +26,11 @@ export type IconKey =
   | "facebook"
   | "instagram"
   | "google"
-  | "youtube";
+  | "youtube"
+  | "mold"
+  | "wrench"
+  | "traction"
+  | "spray";
 
 type IconProps = { className?: string };
 
@@ -197,6 +201,32 @@ const icons: Record<IconKey, (props: IconProps) => React.JSX.Element> = {
   youtube: ({ className }) => (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
       <path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.5 12 5.5 12 5.5s-6 0-7.9.6A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12a31 31 0 0 0 .4 3.8 3 3 0 0 0 2.1 2.1c1.9.6 7.9.6 7.9.6s6 0 7.9-.6a3 3 0 0 0 2.1-2.1c.3-1.2.4-2.5.4-3.8s-.1-2.6-.4-3.8zM10 15V9l5 3z" />
+    </svg>
+  ),
+  mold: ({ className }) => (
+    <svg viewBox="0 0 24 24" fill={line} stroke="currentColor" strokeWidth={2} className={className}>
+      <circle cx="8" cy="14" r="2.6" />
+      <circle cx="14" cy="9" r="2.1" />
+      <circle cx="16.5" cy="15" r="1.8" />
+      <circle cx="10.5" cy="18.5" r="1.4" />
+    </svg>
+  ),
+  wrench: ({ className }) => (
+    <svg viewBox="0 0 24 24" fill={line} stroke="currentColor" strokeWidth={2} className={className}>
+      <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-3-3z" />
+    </svg>
+  ),
+  traction: ({ className }) => (
+    <svg viewBox="0 0 24 24" fill={line} stroke="currentColor" strokeWidth={2} className={className}>
+      <rect x="3" y="3" width="18" height="18" rx="3" />
+      <path d="M7 7v.01M12 7v.01M17 7v.01M7 12v.01M12 12v.01M17 12v.01M7 17v.01M12 17v.01M17 17v.01" strokeWidth={2.6} />
+    </svg>
+  ),
+  spray: ({ className }) => (
+    <svg viewBox="0 0 24 24" fill={line} stroke="currentColor" strokeWidth={2} className={className}>
+      <path d="M9 8V4h4v4" />
+      <path d="M7 8h8l1 12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z" />
+      <path d="M15 3l2 2M18 6l2-1M17 9l2.5.5" />
     </svg>
   ),
 };

@@ -4,9 +4,25 @@ export type GalleryItem = {
   height: number;
   title: string;
   desc: string;
+  badgeLabel?: string;
 };
 
 export const beforeAfterGallery: GalleryItem[] = [
+  {
+    src: "/images/driveway.webp",
+    width: 765,
+    height: 1020,
+    title: "Aggregate Driveway Cleaning & Sealing",
+    desc: "A dull, unsealed aggregate driveway restored to a rich, protected finish.",
+    badgeLabel: "Completed Project",
+  },
+  {
+    src: "/images/pressure-washing.webp",
+    width: 765,
+    height: 1020,
+    title: "Concrete Driveway Cleaning & Sealing",
+    desc: "Years of buildup lifted from a concrete walkway before it's sealed.",
+  },
   {
     src: "/images/stairs-before-after.webp",
     width: 1360,

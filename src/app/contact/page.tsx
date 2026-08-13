@@ -17,7 +17,7 @@ export default function ContactPage() {
       <PageHero
         crumb="Contact"
         title="Request Your Free Sealing Estimate"
-        body="Tell us what's going on with your driveway, patio or pavers and we'll get back to you fast with honest answers — no pressure, no obligation."
+        body="Tell us what's going on with your driveway, patio or pavers and we'll get back to you fast with reliable answers — no pressure, no obligation."
         image="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80"
       />
 
@@ -29,8 +29,8 @@ export default function ContactPage() {
                 <span className="eyebrow">Get In Touch</span>
                 <h2 className="text-[clamp(1.7rem,3.5vw,2.3rem)] mt-3 mb-2.5">We&apos;re Here to Help</h2>
                 <p className="text-ink-500">
-                  Call us directly or fill out the form — whichever is easier. A real {business.name} team member
-                  will respond, not a call center.
+                  Give us a call or text for a free estimate, or fill out the form below — whichever is easier.
+                  A real {business.name} team member will respond, not a call center.
                 </p>
               </div>
 
@@ -42,7 +42,7 @@ export default function ContactPage() {
                   <Icon name="phone" className="h-6 w-6 text-white" />
                 </span>
                 <div>
-                  <h4 className="text-[1.06rem] mb-0.5">Call Us</h4>
+                  <h4 className="text-[1.06rem] mb-0.5">Call or Text</h4>
                   <p className="text-ink-500">{business.phoneDisplay}</p>
                 </div>
               </a>
@@ -85,8 +85,8 @@ export default function ContactPage() {
               <div className="flex gap-3.5 items-center rounded-[10px] bg-amber-500/12 px-4.5 py-4">
                 <Icon name="shieldCheck" className="h-6.5 w-6.5 text-amber-600 shrink-0" />
                 <div>
-                  <strong className="block text-charcoal-900 font-head">{business.warrantyYears} Warranty</strong>
-                  <span className="text-[0.86rem] text-ink-700">Honest pricing on every job</span>
+                  <strong className="block text-charcoal-900 font-head">Family-Owned &amp; Operated</strong>
+                  <span className="text-[0.86rem] text-ink-700">Reliable pricing on every job</span>
                 </div>
               </div>
             </Reveal>

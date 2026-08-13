@@ -4,7 +4,6 @@ import { SectionHead } from "./SectionHead";
 import { Reveal } from "./Reveal";
 import { Icon } from "./icons";
 import { areas } from "@/lib/areas";
-import { business } from "@/lib/site";
 
 export function ProudlyServing() {
   return (
@@ -12,8 +11,8 @@ export function ProudlyServing() {
       <Container>
         <SectionHead
           eyebrow="Proudly Serving Williamson County"
-          title={`Local to ${business.regionShort.replace(", TN", "")} — Not a National Chain`}
-          body="We're a locally owned sealing crew, not a franchise call center. That means the person who inspects your driveway is the same person who shows up to seal it."
+          title="Local, Family-Owned — Not a National Chain"
+          body="We're a locally owned, family-run sealing crew, not a franchise call center. That means the person who inspects your driveway is the same person who shows up to seal it."
         />
         <Reveal className="flex flex-wrap justify-center gap-3">
           {areas.map((area) => (

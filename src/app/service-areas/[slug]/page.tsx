@@ -54,7 +54,7 @@ export default async function AreaDetailPage({
       <PageHero
         crumb={area.city}
         title={`Concrete & Paver Sealing in ${area.city}, TN`}
-        body={`${business.name} protects driveways, patios and pavers throughout ${area.city} and the surrounding ${area.region} area with commercial-grade sealers and a written ${business.warrantyYears.toLowerCase()} warranty.`}
+        body={`${business.name} protects driveways, patios and pavers throughout ${area.city} and the surrounding ${area.region} area with commercial-grade sealers and careful, reliable work.`}
         image={area.heroImage}
       />
 
@@ -92,7 +92,7 @@ export default async function AreaDetailPage({
             title={`Sealing Services Available in ${area.city}`}
             body="Every sealer is matched to your surface, traffic and finish — never a one-size-fits-all coating."
           />
-          <div className="grid gap-5.5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5.5 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => (
               <ServiceCard key={service.slug} service={service} delay={i === 0 ? undefined : ((i % 3) as 1 | 2)} />
             ))}
@@ -121,7 +121,7 @@ export default async function AreaDetailPage({
       <CTASection
         eyebrow={`Serving ${area.city}`}
         title={`Get Your Free ${area.city} Sealing Estimate`}
-        body={`Local, honest, and ready to help — your free inspection in ${area.city} is just one call away.`}
+        body={`Local, reliable, and ready to help — your free inspection in ${area.city} is just one call away.`}
       />
     </>
   );

@@ -69,7 +69,7 @@ export const areas: Area[] = [
     blurb: "One of Tennessee's fastest-growing towns.",
     intro: [
       "Nolensville is one of the fastest-growing towns in Tennessee, and that growth means a steady stream of newly poured driveways, patios and pool decks that need to be sealed for the first time — plus older properties along the historic Nolensville Pike corridor that need a fresh coat after years of exposure.",
-      "We serve new-construction neighborhoods and long-established Nolensville properties alike, with the same honest inspection and sealer recommendation either way.",
+      "We serve new-construction neighborhoods and long-established Nolensville properties alike, with the same reliable inspection and sealer recommendation either way.",
     ],
     highlights: [
       "First-time sealing for new-construction driveways & patios",
@@ -82,18 +82,34 @@ export const areas: Area[] = [
     slug: "forest-hills",
     city: "Forest Hills",
     region: "Davidson & Williamson County, TN",
-    heroImage:
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1600&q=80",
+    heroImage: "/images/hero-image.png",
     blurb: "Wooded estate lots bordering Nashville & Brentwood.",
     intro: [
       "Forest Hills is a small, exclusive residential city bordering Nashville and Brentwood, known for large wooded lots, long private driveways and mature landscaping. Heavy tree cover means more shade, more moisture retention and more organic staining on concrete and pavers than in open, sun-exposed neighborhoods.",
-      "We account for that extra shade and moisture when we recommend a sealer for Forest Hills properties, so you get protection against mildew and staining in addition to the standard water and UV defense.",
+      "We account for that extra shade and moisture when we recommend a sealer for Forest Hills properties, so you get protection against mildew and staining in addition to the standard water defense.",
     ],
     highlights: [
       "Long, shaded private driveways",
-      "Mildew- and mold-resistant sealer options for wooded lots",
+      "Mold- and mildew-resistant sealer options for wooded lots",
       "Exposed aggregate and paver entryways",
       "Estate-scale patios and outdoor living spaces",
+    ],
+  },
+  {
+    slug: "green-hills",
+    city: "Green Hills",
+    region: "Davidson County, TN",
+    heroImage: "/images/driveway.webp",
+    blurb: "Nashville's upscale shopping & residential district.",
+    intro: [
+      "Green Hills blends one of Nashville's premier shopping destinations with quiet, tree-lined residential streets just minutes away — meaning we see everything from classic brick homes with mature landscaping to newer properties near the retail corridor.",
+      "We help Green Hills homeowners keep their driveways, walkways and patios looking as sharp as the neighborhood around them, with the same careful prep and professional-grade sealers we use across Williamson County.",
+    ],
+    highlights: [
+      "Driveway and walkway cleaning near the Green Hills retail corridor",
+      "Brick and stone mailbox cleaning for classic Green Hills homes",
+      "Patio and paver sealing for mature, tree-shaded properties",
+      "Exposed aggregate and broom-finish driveway sealing",
     ],
   },
 ];

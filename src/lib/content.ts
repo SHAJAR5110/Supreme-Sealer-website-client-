@@ -2,14 +2,14 @@ import type { IconKey } from "@/components/icons";
 
 export const problems: { icon: IconKey; title: string; body: string }[] = [
   {
-    icon: "sun",
-    title: "Faded, Sun-Bleached Concrete",
-    body: "UV exposure dries out and discolors unsealed concrete and pavers, leaving driveways and patios looking chalky and worn years before they should.",
+    icon: "mold",
+    title: "Mold and Mildew",
+    body: "An unsealed driveway holds onto moisture, inviting mold and mildew that stain the surface and slowly eat away at it over time.",
   },
   {
-    icon: "flame",
-    title: "Oil, Grease & Rust Stains",
-    body: "Unsealed concrete soaks up every drip — oil, grease, fertilizer and rust stains bind into the surface and get harder to lift the longer they sit.",
+    icon: "wrench",
+    title: "Rust Mitigation",
+    body: "Rust from patio furniture, tools and vehicles etches into unsealed concrete — sealing keeps it from binding into the surface for good.",
   },
   {
     icon: "droplet",
@@ -27,9 +27,9 @@ export const problems: { icon: IconKey; title: string; body: string }[] = [
     body: "Loose or washed-out joint sand gives weeds and ants an easy way into your patio — and once they're established, they're tough to fully clear out.",
   },
   {
-    icon: "waves",
-    title: "Slippery Surfaces When Wet",
-    body: "The wrong sealer — or none at all — leaves pool decks and walkways dangerously slick. We match the finish to keep surfaces safe underfoot.",
+    icon: "traction",
+    title: "Improve Traction",
+    body: "The right sealer adds slip-resistant texture to pool decks and walkways, keeping surfaces safer underfoot even when wet.",
   },
 ];
 
@@ -46,21 +46,21 @@ export const whyChooseUs: { icon: IconKey; title: string; body: string }[] = [
   },
   {
     icon: "clipboard",
-    title: "Honest, Upfront Pricing",
+    title: "Professional, Upfront Pricing",
     body: "A clear written estimate before any work begins — no scare tactics, no pressure, and no surprise line items after the fact.",
   },
   {
-    icon: "shieldCheck",
-    title: "Written 5-Year Warranty",
-    body: "Every sealing job is backed by a written warranty, so you know exactly what's covered and for how long.",
+    icon: "search",
+    title: "Free On-Site Estimates",
+    body: "We inspect your property in person and walk you through exactly what it needs before any work is scheduled.",
   },
 ];
 
 export const benefits: { icon: IconKey; title: string; body: string }[] = [
   {
     icon: "droplet",
-    title: "Long-Lasting Protection",
-    body: "A quality seal coat blocks water, oil, salt and UV rays before they ever reach the concrete or paver surface underneath.",
+    title: "Craftsmanship",
+    body: "Every job is done right the first time — careful prep, precise application and attention to detail on every surface we touch.",
   },
   {
     icon: "sparkles",
@@ -78,16 +78,16 @@ export const processSteps: { icon: IconKey; title: string; body: string }[] = [
   {
     icon: "search",
     title: "Free On-Site Estimate",
-    body: "We inspect your driveway, patio or pavers in person, point out problem areas, and give you an honest, written price — no obligation.",
+    body: "We inspect your driveway, patio or pavers in person, point out problem areas, and give you a reliable, written price — no obligation.",
   },
   {
     icon: "clipboard",
-    title: "Clean, Prep & Repair",
-    body: "We pressure wash, treat stains, repair minor cracks or joints, and let the surface fully dry before any sealer goes down.",
+    title: "Clean & Prep",
+    body: "We pressure wash, treat stains, and let the surface fully dry before any sealer goes down.",
   },
   {
     icon: "checkCircle",
-    title: "Seal & Walkthrough",
+    title: "Seal & Application",
     body: "We apply the right professional-grade sealer for your surface, then walk you through cure times and care so it lasts.",
   },
 ];
@@ -95,7 +95,7 @@ export const processSteps: { icon: IconKey; title: string; body: string }[] = [
 export const homeFaqs: { q: string; a: string }[] = [
   {
     q: "How do I know if my concrete or pavers actually need sealing?",
-    a: "Watch for water that no longer beads on the surface, fading or chalky color, stains that won't lift, or sand washing out from paver joints. Any of those is worth a free inspection — we'll tell you honestly whether it's time or if you can wait.",
+    a: "Watch for water that no longer beads on the surface, fading or chalky color, stains that won't lift, or sand washing out from paver joints. Any of those is worth a free inspection — we'll give you a straightforward, professional answer on whether it's time or if you can wait.",
   },
   {
     q: "How long does a professional seal coat last?",
@@ -106,8 +106,8 @@ export const homeFaqs: { q: string; a: string }[] = [
     a: "Most sealers are dry to the touch within a few hours and ready for foot traffic by the next day, but we recommend keeping vehicles off a freshly sealed driveway for at least 48-72 hours to let it fully cure.",
   },
   {
-    q: "Do you offer a warranty on your sealing work?",
-    a: "Yes — every job is backed by our written 5-year warranty, so you know exactly what's covered and for how long.",
+    q: "Can I text you instead of calling?",
+    a: "Yes — call or text us any time, whichever is easier for you. We're happy to answer questions or schedule your free estimate either way.",
   },
   {
     q: "What's the difference between a wet-look and a natural sealer?",

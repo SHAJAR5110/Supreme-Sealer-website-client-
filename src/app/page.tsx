@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import { SectionHead } from "@/components/SectionHead";
+import { Button } from "@/components/Button";
 import { Hero } from "@/components/Hero";
 import { TrustStrip } from "@/components/TrustStrip";
 import { ProudlyServing } from "@/components/ProudlyServing";
@@ -12,7 +13,7 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import { CTASection } from "@/components/CTASection";
 import { StatCounter } from "@/components/StatCounter";
 import { BeforeAfterGallery } from "@/components/BeforeAfterGallery";
-import { services } from "@/lib/services";
+import { featuredServices } from "@/lib/services";
 import { areas } from "@/lib/areas";
 import { testimonials } from "@/lib/testimonials";
 import { problems, whyChooseUs, benefits, processSteps, homeFaqs } from "@/lib/content";
@@ -48,12 +49,12 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="py-16 sm:py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-cream-100">
         <Container>
           <SectionHead
             eyebrow="Why Choose Us"
             title="Homeowners Trust Supreme Sealers to Do It Right"
-            body="No scare tactics, no big-box sealers, no surprises — just an honest local crew that stands behind its work."
+            body="No scare tactics, no big-box sealers, no surprises — just a reliable local crew that stands behind its work."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {whyChooseUs.map((item, i) => (
@@ -70,7 +71,7 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="py-16 sm:py-24 bg-cream-100">
+      <section className="py-16 sm:py-24 bg-white">
         <Container>
           <SectionHead
             eyebrow="The Benefits of Sealing"
@@ -107,7 +108,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <StatCounter target={15} suffix="+" label="Years In Business" />
             <StatCounter target={1200} suffix="+" label="Driveways & Patios Sealed" />
-            <StatCounter target={5} suffix="-yr" label="Warranty Coverage" />
+            <StatCounter target={100} suffix="%" label="Free Estimates" />
             <StatCounter target={4.9} decimals={1} label="Average Star Rating" />
           </div>
         </Container>
@@ -117,13 +118,18 @@ export default function HomePage() {
         <Container>
           <SectionHead
             eyebrow="Our Services"
-            title="Four Specialized Sealing Services"
+            title="Our Most-Requested Sealing Services"
             body="One trusted local team for every sealed surface around your home."
           />
-          <div className="grid gap-5.5 sm:grid-cols-2 lg:grid-cols-4">
-            {services.map((service, i) => (
+          <div className="grid gap-5.5 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredServices.map((service, i) => (
               <ServiceCard key={service.slug} service={service} delay={i === 0 ? undefined : ((i % 3) as 1 | 2)} />
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <Button href="/services" variant="dark" size="lg" showArrow>
+              See All Services
+            </Button>
           </div>
         </Container>
       </section>
@@ -176,7 +182,7 @@ export default function HomePage() {
       <CTASection
         eyebrow="Let's Protect Your Concrete"
         title="Get Your Free Sealing Estimate Today"
-        body="Talk to a real local expert — not a call center. We'll inspect your driveway or patio and give you an honest plan backed by our written warranty."
+        body="Talk to a real local expert — not a call center. We'll inspect your driveway or patio and give you a straightforward, professional plan."
       />
     </>
   );

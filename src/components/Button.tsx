@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Icon } from "./icons";
 
-type Variant = "primary" | "dark" | "ghost" | "light";
+type Variant = "primary" | "dark" | "ghost" | "ghost-dark" | "light";
 
 const variantClasses: Record<Variant, string> = {
   primary:
@@ -9,6 +9,8 @@ const variantClasses: Record<Variant, string> = {
   dark: "bg-charcoal-800 text-white hover:bg-charcoal-700 hover:-translate-y-0.5",
   ghost:
     "bg-transparent text-white border-[1.5px] border-white/40 hover:bg-white/10 hover:border-white hover:-translate-y-0.5",
+  "ghost-dark":
+    "bg-transparent text-ink-900 border-[1.5px] border-ink-900/35 hover:bg-ink-900/5 hover:border-ink-900/60 hover:-translate-y-0.5",
   light: "bg-white text-charcoal-900 shadow-sm hover:-translate-y-0.5 hover:shadow-md",
 };
 

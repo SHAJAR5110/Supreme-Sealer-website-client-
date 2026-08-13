@@ -16,13 +16,18 @@ export function Footer() {
         <Container className="flex items-center justify-between gap-6 py-8 flex-wrap">
           <div>
             <h3 className="text-white text-[clamp(1.4rem,3vw,2rem)]">
-              Protect Your Concrete &amp; Pavers — Backed for 5 Years
+              Protect Your Concrete &amp; Pavers — Done Right
             </h3>
             <p className="text-white/90">Serving {business.regionFull}.</p>
           </div>
-          <Button href="/contact" variant="light" size="lg">
-            Book Your Free Estimate
-          </Button>
+          <div className="flex flex-wrap gap-3">
+            <Button href="/contact" variant="light" size="lg">
+              Book Your Free Estimate
+            </Button>
+            <Button href={`tel:${business.phoneTel}`} variant="dark" size="lg">
+              Call or Text {business.phoneDisplay}
+            </Button>
+          </div>
         </Container>
       </div>
 
@@ -44,9 +49,9 @@ export function Footer() {
               <Icon name="shieldCheck" className="h-6.5 w-6.5 text-gold-400 shrink-0" />
               <div>
                 <strong className="block text-white font-head text-[0.92rem]">
-                  {business.warrantyYears} Warranty
+                  Family-Owned &amp; Operated
                 </strong>
-                <span className="text-[0.78rem]">On every sealing job we complete</span>
+                <span className="text-[0.78rem]">Serving Williamson County homeowners</span>
               </div>
             </div>
             <div className="flex gap-3">
@@ -128,7 +133,7 @@ export function Footer() {
 
         <div className="flex items-center justify-between gap-4 flex-wrap py-6 text-[0.86rem]">
           <p>
-            &copy; {year} {business.name}. All rights reserved. {business.warrantyYears} warranty on every job.
+            &copy; {year} {business.name}. All rights reserved.
           </p>
           <div className="flex gap-5">
             <Link href="/service-areas" className="hover:text-amber-400">Service Areas</Link>

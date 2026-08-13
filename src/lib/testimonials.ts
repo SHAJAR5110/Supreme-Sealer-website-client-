@@ -25,6 +25,6 @@ export const testimonials: Testimonial[] = [
     name: "Amanda T.",
     city: "Nolensville, TN",
     quote:
-      "Honest team from the first phone call. They explained exactly what our exposed aggregate driveway needed and didn't try to upsell us on anything we didn't need. Pricing was upfront the whole way.",
+      "Professional team from the first phone call. They explained exactly what our exposed aggregate driveway needed and didn't try to upsell us on anything we didn't need. Pricing was upfront the whole way.",
   },
 ];

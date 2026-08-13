@@ -26,7 +26,7 @@ export async function generateMetadata({
   if (!service) return {};
   return {
     title: `${service.name} in ${business.regionShort}`,
-    description: `${service.cardCopy} Serving ${business.regionFull}. Free written estimates and a ${business.warrantyYears.toLowerCase()} warranty.`,
+    description: `${service.cardCopy} Serving ${business.regionFull}. Free written estimates — call or text ${business.phoneDisplay}.`,
   };
 }
 
@@ -111,7 +111,7 @@ export default async function ServiceDetailPage({
 
       <section className="py-16 sm:py-24 bg-cream-100">
         <Container>
-          <SectionHead eyebrow="Explore More" title="Other Sealing Services" />
+          <SectionHead eyebrow="Explore More" title="Other Services" />
           <div className="grid gap-4 sm:grid-cols-3">
             {otherServices.map((s) => (
               <Link
@@ -130,7 +130,7 @@ export default async function ServiceDetailPage({
       <CTASection
         eyebrow="Ready When You Are"
         title={`Get Your Free ${service.shortName} Estimate`}
-        body={`We'll inspect your surface, explain exactly what it needs, and give you an honest written price — backed by our ${business.warrantyYears.toLowerCase()} warranty.`}
+        body="We'll inspect your surface, explain exactly what it needs, and give you a straightforward, professional written price."
         primaryLabel={service.ctaLabel}
       />
     </>
