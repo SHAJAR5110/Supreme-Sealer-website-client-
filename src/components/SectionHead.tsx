@@ -8,7 +8,7 @@ export function SectionHead({
   onDark = false,
 }: {
   eyebrow: string;
-  title: string;
+  title: React.ReactNode;
   body?: string;
   center?: boolean;
   onDark?: boolean;

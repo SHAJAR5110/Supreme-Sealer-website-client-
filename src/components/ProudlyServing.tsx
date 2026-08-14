@@ -11,7 +11,12 @@ export function ProudlyServing() {
       <Container>
         <SectionHead
           eyebrow="Proudly Serving Williamson County"
-          title="Local, Family-Owned — Not a National Chain"
+          title={
+            <>
+              Local, Family-Owned
+              <span className="block">Not a National Chain</span>
+            </>
+          }
           body="We're a locally owned, family-run sealing crew, not a franchise call center. That means the person who inspects your driveway is the same person who shows up to seal it."
         />
         <Reveal className="flex flex-wrap justify-center gap-3">

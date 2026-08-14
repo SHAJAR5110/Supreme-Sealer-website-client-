@@ -28,8 +28,8 @@ export async function generateMetadata({
   const area = getAreaBySlug(slug);
   if (!area) return {};
   return {
-    title: `Concrete & Paver Sealing in ${area.city}, TN`,
-    description: `${business.name} provides professional concrete, paver and exposed aggregate sealing for homeowners in ${area.city}, ${area.region}. Free written estimates.`,
+    title: `Concrete, Paver Sealing & Pressure Washing in ${area.city}, TN`,
+    description: `${business.name} provides professional concrete, paver sealing and pressure washing for homeowners in ${area.city}, ${area.region}. Free written estimates.`,
   };
 }
 
@@ -53,7 +53,7 @@ export default async function AreaDetailPage({
     <>
       <PageHero
         crumb={area.city}
-        title={`Concrete & Paver Sealing in ${area.city}, TN`}
+        title={`Concrete, Paver Sealing & Pressure Washing in ${area.city}, TN`}
         body={`${business.name} protects driveways, patios and pavers throughout ${area.city} and the surrounding ${area.region} area with commercial-grade sealers and careful, reliable work.`}
         image={area.heroImage}
       />

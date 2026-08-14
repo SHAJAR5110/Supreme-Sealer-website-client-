@@ -58,7 +58,7 @@ export function Hero() {
           <Icon name="shieldCheck" className="h-4 w-4" />
           Free Estimates
         </span>
-        <h4 className="text-[1.05rem] mb-1 text-charcoal-900">Local Team You Can Trust</h4>
+        <h4 className="text-[1.05rem] mb-1 text-charcoal-900">Local Family Team</h4>
         <p className="text-[0.85rem] text-ink-500 mb-3.5">Every job starts with a free on-site inspection and a straightforward price.</p>
         <div className="h-2 bg-cream-200 rounded-full overflow-hidden">
           <div className="h-full w-[96%] rounded-full bg-linear-to-r from-amber-500 to-amber-700" />

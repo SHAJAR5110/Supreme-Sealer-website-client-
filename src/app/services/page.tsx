@@ -19,9 +19,10 @@ export default function ServicesPage() {
     <>
       <PageHero
         crumb="Services"
-        title="Concrete, Paver, Aggregate & Driveway Services"
+        title="Concrete, Paver, Aggregate, Driveway Sealing and Pressure Washing Services"
         body="Six specialized services, one accountable local team. Whatever surface needs protecting around your home, we have a proven solution."
-        image="/images/pressure-washing.webp"
+        image="/images/services-hero-brick.png"
+        clear
       />
 
       <section className="py-16 sm:py-24">
@@ -53,7 +54,7 @@ export default function ServicesPage() {
 
       <CTASection
         eyebrow="Not Sure Which Service You Need?"
-        title="We'll Tell You Straight."
+        title="Upfront Pricing. No Guessing. No Gimmicks."
         body="Book a free inspection and we'll diagnose exactly what your driveway, patio or pavers need — then recommend only that."
       />
     </>

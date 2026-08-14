@@ -187,16 +187,16 @@ export const services: Service[] = [
     shortName: "Pressure Washing",
     tagline: "Driveways, Patios & Walkways",
     cardCopy:
-      "Professional pressure washing that lifts dirt, algae and grime before any sealer goes down — or as a standalone refresh.",
-    heroImage: "/images/pressure-washing.webp",
+      "Professional pressure washing that removes mold, mildew, algae and built-up grime — before any sealer goes down, or as a standalone refresh.",
+    heroImage: "/images/pressure-washing-action.jpg",
     icon: "spray",
     intro: [
-      "Pressure washing is the foundation of every sealing job we do — but it's also a service homeowners request on its own, whether it's an annual refresh for a driveway or a deep clean before a big event.",
-      "We match water pressure and cleaning solution to your surface so we lift years of dirt, algae and stains without damaging the concrete, pavers or brick underneath.",
+      "Supreme Sealers provides professional pressure washing and exterior surface cleaning to restore the beauty of your property. We remove mold, mildew, algae, dirt, and built-up grime from exposed aggregate driveways, brick pavers, sidewalks, patios, steps, and other outdoor surfaces.",
+      "Serving Brentwood, Franklin, Cool Springs, Forest Hills, Nolensville, Green Hills, and surrounding Middle Tennessee communities, we help keep your home looking clean, fresh, and protected.",
     ],
     checklist: [
       "Surface-safe pressure and cleaning solution matched to your material",
-      "Algae, mildew and grime removal from driveways, patios and walkways",
+      "Mold, mildew, algae and grime removal from driveways, patios and walkways",
       "Available as a standalone service or paired with sealing",
     ],
     signs: [
