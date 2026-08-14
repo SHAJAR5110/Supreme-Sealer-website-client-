@@ -21,6 +21,7 @@ type ButtonProps = {
   block?: boolean;
   className?: string;
   showArrow?: boolean;
+  disabled?: boolean;
 } & (
   | { href: string; type?: undefined; onClick?: undefined }
   | { href?: undefined; type?: "submit" | "button"; onClick?: () => void }
@@ -33,11 +34,14 @@ export function Button({
   block = false,
   className = "",
   showArrow = false,
+  disabled = false,
   ...rest
 }: ButtonProps) {
   const classes = `inline-flex items-center justify-center gap-2.5 font-head font-bold whitespace-nowrap rounded-[10px] transition-all duration-200 ${
     size === "lg" ? "px-[34px] py-[18px] text-[1.05rem]" : "px-[28px] py-[15px] text-[0.98rem]"
-  } ${variantClasses[variant]} ${block ? "w-full" : ""} ${className}`;
+  } ${variantClasses[variant]} ${block ? "w-full" : ""} ${
+    disabled ? "opacity-60 pointer-events-none" : ""
+  } ${className}`;
 
   const content = (
     <>
@@ -63,7 +67,7 @@ export function Button({
   }
 
   return (
-    <button type={rest.type ?? "button"} onClick={rest.onClick} className={classes}>
+    <button type={rest.type ?? "button"} onClick={rest.onClick} disabled={disabled} className={classes}>
       {content}
     </button>
   );

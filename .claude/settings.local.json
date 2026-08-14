@@ -41,7 +41,9 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(mv \"how-to-pressure-wash-your-driveway-hero-A.jpg\" \"pressure-washing-action.jpg\")",
-      "Bash(mv \"paver-patio cleaning-&-sealing.png\" \"services-hero-brick.png\")"
+      "Bash(mv \"paver-patio cleaning-&-sealing.png\" \"services-hero-brick.png\")",
+      "Bash(curl -sf -o /dev/null -w \"http:%{http_code}\\\\n\" http://localhost:3000/about --max-time 10)",
+      "Bash(curl *)"
     ]
   }
 }

@@ -30,7 +30,8 @@ export type IconKey =
   | "mold"
   | "wrench"
   | "traction"
-  | "spray";
+  | "spray"
+  | "alertCircle";
 
 type IconProps = { className?: string };
 
@@ -227,6 +228,13 @@ const icons: Record<IconKey, (props: IconProps) => React.JSX.Element> = {
       <path d="M9 8V4h4v4" />
       <path d="M7 8h8l1 12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z" />
       <path d="M15 3l2 2M18 6l2-1M17 9l2.5.5" />
+    </svg>
+  ),
+  alertCircle: ({ className }) => (
+    <svg viewBox="0 0 24 24" fill={line} stroke="currentColor" strokeWidth={2} className={className}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v6" />
+      <path d="M12 16.5v.01" />
     </svg>
   ),
 };

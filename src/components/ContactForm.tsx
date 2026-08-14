@@ -13,6 +13,8 @@ export function ContactForm() {
   const [values, setValues] = useState({ name: "", phone: "", email: "", service: "", message: "" });
   const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const update = (field: keyof typeof values) => (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -21,7 +23,7 @@ export function ContactForm() {
     setErrors((err) => ({ ...err, [field]: false }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const nextErrors: Errors = {
       name: values.name.trim().length < 2,
@@ -32,9 +34,26 @@ export function ContactForm() {
     setErrors(nextErrors);
     if (Object.values(nextErrors).some(Boolean)) return;
 
-    setSubmitted(true);
-    setValues({ name: "", phone: "", email: "", service: "", message: "" });
-    setTimeout(() => setSubmitted(false), 7000);
+    setSubmitting(true);
+    setSubmitError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || "Something went wrong.");
+      }
+      setSubmitted(true);
+      setValues({ name: "", phone: "", email: "", service: "", message: "" });
+      setTimeout(() => setSubmitted(false), 7000);
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Something went wrong. Please call or text us instead.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const fieldClasses = (hasError?: boolean) =>
@@ -51,6 +70,13 @@ export function ContactForm() {
         <div className="flex items-center gap-3 rounded-[8px] border border-[#bfe6cd] bg-[#eaf7ef] text-[#176c3f] px-4.5 py-4 mb-4.5 font-medium">
           <Icon name="checkCircle" className="h-5.5 w-5.5 shrink-0" />
           <span>Thank you! Your request has been received — we&apos;ll be in touch shortly.</span>
+        </div>
+      )}
+
+      {submitError && (
+        <div className="flex items-center gap-3 rounded-[8px] border border-danger/30 bg-red-50 text-danger px-4.5 py-4 mb-4.5 font-medium">
+          <Icon name="alertCircle" className="h-5.5 w-5.5 shrink-0" />
+          <span>{submitError}</span>
         </div>
       )}
 
@@ -139,8 +165,8 @@ export function ContactForm() {
         </div>
 
         <div className="mt-5.5">
-          <Button type="submit" block size="lg" showArrow>
-            Request My Free Estimate
+          <Button type="submit" block size="lg" showArrow={!submitting} disabled={submitting}>
+            {submitting ? "Sending..." : "Request My Free Estimate"}
           </Button>
           <p className="text-[0.84rem] text-ink-500 mt-2.5">
             By submitting, you agree to be contacted about your request. We respect your privacy and never share your information.

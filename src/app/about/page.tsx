@@ -12,8 +12,8 @@ import { CTASection } from "@/components/CTASection";
 import { business } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `About Us | Reliable Concrete & Paver Sealing in ${business.regionShort}`,
-  description: `Meet ${business.name}: a local, licensed and insured, family-owned sealing crew serving ${business.regionFull} with reliable pricing and commercial-grade sealers.`,
+  title: `About Us | Driveway Sealing & Pressure Washing Experts in Williamson County, TN`,
+  description: `Meet ${business.name}: a local, licensed and insured, family-owned crew serving ${business.regionFull} with reliable pricing and commercial-grade sealers.`,
 };
 
 const differentiators = [
@@ -39,10 +39,20 @@ export default function AboutPage() {
     <>
       <PageHero
         crumb="About Us"
-        title="Reliable Sealing Experts Serving Williamson County"
+        title="Driveway Sealing & Pressure Washing Experts in Williamson County, TN"
         body={`${business.name} protects driveways, patios and pavers across ${business.regionFull} with straight answers and commercial-grade sealers.`}
         image="/images/steps-cleaned.webp"
       />
+
+      <section className="pt-16 sm:pt-24">
+        <Container>
+          <SectionHead
+            eyebrow="Where We Work"
+            title="Serving Brentwood, Franklin, Nolensville & Surrounding Middle Tennessee Communities"
+            body="From Williamson County's established neighborhoods to its fastest-growing towns, we bring the same commercial-grade sealers and careful, reliable work to every property."
+          />
+        </Container>
+      </section>
 
       <section className="py-16 sm:py-24">
         <Container>
