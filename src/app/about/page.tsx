@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
 import { SectionHead } from "@/components/SectionHead";
@@ -6,8 +7,8 @@ import { Reveal } from "@/components/Reveal";
 import { SplitMedia } from "@/components/SplitMedia";
 import { ValueList } from "@/components/ValueList";
 import { IconCard } from "@/components/IconCard";
-import { Icon } from "@/components/icons";
 import { Button } from "@/components/Button";
+import { ReviewsWidget } from "@/components/ReviewsWidget";
 import { CTASection } from "@/components/CTASection";
 import { business } from "@/lib/site";
 
@@ -133,16 +134,41 @@ export default function AboutPage() {
           </div>
 
           <Reveal delay={1} className="mt-12 max-w-2xl mx-auto text-center">
-            <div className="rounded-3xl overflow-hidden border-2 border-dashed border-line bg-white aspect-video grid place-items-center mb-6">
-              <div className="text-ink-500">
-                <Icon name="home" className="h-10 w-10 mx-auto mb-2 text-amber-500" />
-                <p className="text-sm font-head font-semibold">Family photo coming soon</p>
-              </div>
+            <div className="rounded-3xl overflow-hidden shadow-md mb-6">
+              <Image
+                src="/images/family-photo.png"
+                alt={`The ${business.name} family`}
+                width={1262}
+                height={842}
+                className="w-full h-auto block"
+              />
             </div>
             <p className="text-[1.1rem] text-ink-700 font-head font-semibold">
               We&apos;re a family-owned business that inspects every property — ready to work with the team that
               actually shows up.
             </p>
+          </Reveal>
+        </Container>
+      </section>
+
+      <section className="py-16 sm:py-24">
+        <Container>
+          <SectionHead eyebrow="Customer Reviews" title="What Our Customers Are Saying" />
+          <Reveal>
+            <ReviewsWidget />
+          </Reveal>
+        </Container>
+      </section>
+
+      <section className="py-16 sm:py-24 bg-cream-100">
+        <Container>
+          <SectionHead eyebrow="Latest Updates" title="Recent Posts From Supreme Sealers" />
+          <Reveal>
+            <iframe
+              src="https://www.localmarketingmanager.com/api/local-posts/supreme-sealers-local-posts-widget"
+              style={{ width: "100%", minHeight: 480, border: "none" }}
+              title="Local Posts Widget"
+            />
           </Reveal>
         </Container>
       </section>

@@ -7,8 +7,8 @@ import { ContactForm } from "@/components/ContactForm";
 import { business } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `Contact Us | Free Sealing Estimate in ${business.regionShort}`,
-  description: `Contact ${business.name} for a free concrete or paver sealing estimate in ${business.regionFull}. Call ${business.phoneDisplay} or send us a message.`,
+  title: "Request your free Sealing or Pressure Washing quote today",
+  description: `Contact ${business.name} for a free concrete or paver sealing, driveway sealing, or pressure washing quote in ${business.regionFull}. Call ${business.phoneDisplay} or send us a message.`,
 };
 
 export default function ContactPage() {
