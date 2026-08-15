@@ -100,17 +100,42 @@ export default function ContactPage() {
 
       <section className="pb-16 sm:pb-24">
         <Container>
-          <Reveal className="rounded-[22px] border border-line overflow-hidden min-h-[340px] grid place-items-center text-center bg-[linear-gradient(rgba(31,40,50,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(31,40,50,0.06)_1px,transparent_1px),linear-gradient(135deg,#e9eef3,#dde6ee)] bg-[length:40px_40px,40px_40px,100%_100%]">
-            <div className="flex flex-col items-center gap-2.5 p-5 text-charcoal-800">
-              <Icon name="mapPin" className="h-11 w-11 text-amber-500 drop-shadow-[0_8px_12px_rgba(20,17,12,0.2)]" />
-              <strong className="font-head text-[1.1rem]">Serving {business.regionShort}</strong>
-              <span className="text-[0.86rem] text-ink-500">
-                Replace this placeholder with your embedded Google Map
-                <br />
-                (Google Maps → Share → Embed a map → paste the &lt;iframe&gt; here)
-              </span>
-            </div>
-          </Reveal>
+          <div className="mb-8 text-center">
+            <span className="eyebrow justify-center">Find Us Nearby</span>
+            <h2 className="mt-3 text-[clamp(1.5rem,3vw,2rem)]">Serving {business.regionShort}</h2>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <Reveal className="rounded-[22px] overflow-hidden border border-line shadow-sm">
+              <div className="flex items-center gap-2.5 px-5 py-4 bg-white">
+                <Icon name="mapPin" className="h-5 w-5 text-amber-500 shrink-0" />
+                <h3 className="font-head font-bold text-charcoal-900 text-[1.02rem]">Brentwood, TN</h3>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103305.58165931869!2d-86.86077455087963!3d35.988549775947384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88647baeba495ce3%3A0x357d403883f6df90!2sBrentwood%2C%20TN%2C%20USA!5e0!3m2!1sen!2s!4v1786813914387!5m2!1sen!2s"
+                className="w-full h-[320px] block"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Map of Brentwood, TN"
+              />
+            </Reveal>
+            <Reveal delay={1} className="rounded-[22px] overflow-hidden border border-line shadow-sm">
+              <div className="flex items-center gap-2.5 px-5 py-4 bg-white">
+                <Icon name="mapPin" className="h-5 w-5 text-amber-500 shrink-0" />
+                <h3 className="font-head font-bold text-charcoal-900 text-[1.02rem]">Franklin, TN</h3>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206833.63793189486!2d-87.01429350324003!3d35.903511398881655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886378e0e0f94935%3A0xf7addba980fa8da1!2sFranklin%2C%20TN%2C%20USA!5e0!3m2!1sen!2s!4v1786813995770!5m2!1sen!2s"
+                className="w-full h-[320px] block"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Map of Franklin, TN"
+              />
+            </Reveal>
+          </div>
         </Container>
       </section>
     </>
