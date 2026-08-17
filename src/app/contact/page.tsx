@@ -16,7 +16,7 @@ export default function ContactPage() {
     <>
       <PageHero
         crumb="Contact"
-        title="Request Your Free Sealing Estimate"
+        title="Request your free Sealing or Pressure Washing quote today"
         body="Tell us what's going on with your driveway, patio or pavers and we'll get back to you fast with reliable answers — no pressure, no obligation."
         image="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80"
       />
