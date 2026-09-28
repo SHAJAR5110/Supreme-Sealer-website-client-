@@ -20,9 +20,101 @@ import { problems, whyChooseUs, benefits, processSteps, homeFaqs } from "@/lib/c
 import { beforeAfterGallery } from "@/lib/gallery";
 import { business } from "@/lib/site";
 
+const homeSchema = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  name: "Supreme Sealers",
+  description:
+    "Supreme Sealers is a family-owned Power Washing Service based in Brentwood, TN, serving Brentwood, Franklin, Forest Hills, and Nolensville. With 15+ years of experience, we deliver professional Driveway Pressure Washing to remove dirt, algae, and stains, then protect surfaces with expert Driveway Sealing for longer-lasting curb appeal. We specialize in Aggregate Driveway Sealing, including exposed aggregate and custom finishes, plus sidewalks, patios, pavers, and commercial concrete. Get a free estimate today for reliable results you can see.",
+  url: "https://supremesealersofbrentwood.com/",
+  telephone: "+16157325377",
+  image: "https://d17lvxud83eqj6.cloudfront.net/ef5f24df-1ae6-4174-85ce-290ac936da45.png",
+  logo: "https://d17lvxud83eqj6.cloudfront.net/ef5f24df-1ae6-4174-85ce-290ac936da45.png",
+  currenciesAccepted: "USD",
+  paymentAccepted: "Cash, Credit Card",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "",
+    addressLocality: null,
+    addressRegion: null,
+    postalCode: null,
+    addressCountry: null,
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 35.982029,
+    longitude: -86.7714225,
+  },
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["MONDAY"], opens: "08:00", closes: "17:30" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["TUESDAY"], opens: "08:00", closes: "17:30" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["WEDNESDAY"], opens: "08:00", closes: "17:30" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["THURSDAY"], opens: "08:00", closes: "17:30" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["FRIDAY"], opens: "08:00", closes: "17:30" },
+  ],
+  areaServed: [
+    { "@type": "Place", name: "Brentwood" },
+    { "@type": "Place", name: "Franklin" },
+    { "@type": "Place", name: "Forest Hills" },
+    { "@type": "Place", name: "Nolensville" },
+  ],
+  sameAs: [
+    "https://www.instagram.com/supreme_sealers/",
+    "https://www.facebook.com/SupremeSealersofBrentwood",
+  ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: 41,
+    bestRating: 5,
+    worstRating: 1,
+  },
+  review: [
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Connie Woolsey" },
+      reviewBody:
+        "SUPREME SEALERS OF BRENTWOOD - I just Mace and his team pressure wash, repair and fill cracks and seal entire driveway.  They were great!  What a difference they made to my house.  I highly recommend this company.",
+      reviewRating: { "@type": "Rating", ratingValue: 5 },
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Audrey Singleton" },
+      reviewBody:
+        "If you're looking for someone who truly goes above and beyond, look no further. From start to finish, the experience was exceptional. Mace was incredibly communicative, keeping us informed every step of the way, and his pricing was completely fair and transparent. What really stood out was how attentive and considerate he was throughout the entire process. You could tell he genuinely cared about doing a great job and treating his customers well. The work itself looks amazing, but honestly, his professionalism and kindness made the whole experience. We will absolutely be calling him again and recommending him to everyone we know!",
+      reviewRating: { "@type": "Rating", ratingValue: 5 },
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Christina Milon" },
+      reviewBody:
+        "This is the second time we have had Supreme Sealers clean an seal our very long, aggregate driveway. The first sealing lasted for five years. They are very professional and do a great job!",
+      reviewRating: { "@type": "Rating", ratingValue: 5 },
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Karen Beasley" },
+      reviewBody:
+        "Mace and his team did a great job pressure washing and sealing all our aggregate and smooth concrete. This is the second time we have used them. The product they use really helps keep the surfaces cleaner longer!",
+      reviewRating: { "@type": "Rating", ratingValue: 5 },
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Ron Benkert" },
+      reviewBody:
+        "Mace demonstrates exceptional commitment to customer service and satisfaction. He thoroughly explained the various sealing options available, enabling me to make an informed decision. Besides sealing my concrete driveway and walkways, he also cleaned and sealed my brick porch and steps. They look great!  I highly recommend Supreme Sealers for their professionalism and competitive pricing.",
+      reviewRating: { "@type": "Rating", ratingValue: 5 },
+    },
+  ],
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+      />
       <Hero />
       <TrustStrip />
       <ProudlyServing />
